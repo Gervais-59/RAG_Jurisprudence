@@ -1,0 +1,25 @@
+nltk
+pypdf
+# Extraction PDF (Phase 1)
+pdfplumber>=0.11.0
+
+# Embeddings et modèles (Phase 3)
+sentence-transformers>=3.0.0
+
+# Index vectoriel persistant (Phase 3)
+chromadb>=0.5.0
+
+# Recherche lexicale BM25 (Phase 4)
+rank-bm25>=0.2.2
+
+# Client LLM (compatible Groq, OpenAI, Ollama...) (Phase 5)
+openai>=1.40.0
+
+# Chargement des variables d'environnement (clé Groq) (Phase 5)
+python-dotenv>=1.0.0
+
+# Manipulation de vecteurs pour la désambiguïsation (Phase 4d)
+numpy>=1.26.0
+
+# Notebook (si tu commit tes .ipynb)
+jupyter>=1.0.0

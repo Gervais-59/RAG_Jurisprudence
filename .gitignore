@@ -1,0 +1,13 @@
+.env
+env/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+corpus/index_chroma/
+corpus/*.pdf
+acte_uniforme/
+# Notes personnelles
+bon_a_savoir.txt
+
+# Configuration PyCharm personnelle
+.idea/

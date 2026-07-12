@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cov_01",
+    "question": "Quelle est la durée maximale de la période d'essai ?",
+    "reponse": "La durée maximale de la période d'essai varie selon la catégorie professionnelle [Convention collective interprofessionnelle, Art. 14]. Elle est fixée comme suit :\n- 8 jours pour les travailleurs payés à l'heure (ouvriers et employés) [Convention collective interprofessionnelle, Art. 14] ;\n- 1 mois pour les travailleurs payés au mois (ouvriers et employés) [Convention collective interprofessionnelle, Art. 14] ;\n- 2 mois pour les agents de maîtrise, techniciens et assimilés [Convention collective interprofessionnelle, Art. 14] ;\n- 3 mois pour les ingénieurs, cadres et assimilés [Convention collective interprofessionnelle, Art. 14] ;\n- 6 mois pour les cadres supérieurs [Convention collective interprofessionnelle, Art. 14].\nCes délais ne sont renouvelables qu'une seule fois [Convention collective interprofessionnelle, Art. 14].\n⚠️ Information documentaire — ne constitue pas un conseil juridique. Consultez un professionnel du droit pour votre situation.",
+    "duree": 1.1697907447814941
+  },
+  {
+    "id": "cov_02",
+    "question": "Une femme enceinte peut-elle être licenciée ?",
+    "reponse": "Selon l'article 23.3 du Code du travail, l'employeur ne doit pas prendre en considération l'état de grossesse d'une femme pour résilier son contrat de travail [Code du travail, Art. 23.3]. Cependant, il est possible de résilier le contrat si cela est justifié par des raisons non liées à la grossesse. Dans le cas où la femme enceinte est affectée à un emploi qui excède ses forces, le contrat peut être résilié avec paiement des indemnités de préavis et de licenciement, s'il y a lieu [Code du travail, Art. 23.13].\n\n⚠️ Information documentaire — ne constitue pas un conseil juridique. Consultez un professionnel du droit pour votre situation.",
+    "duree": 1.734351396560669
+  },
+  {
+    "id": "cov_03",
+    "question": "Combien de jours de congés payés par mois de travail ?",
+    "reponse": "Selon le Décret n° 98-39 du 28 janvier 1998, la durée du congé est déterminée à raison de deux jours ouvrables par mois de travail pour les adultes [DECRET N° 98-39 DU 28 JANVIER 1998 RELATIF AU REGIME DES CONGES PAYES RELEVANT DU CODE DU TRAVAIL, Art. 5]. Cependant, le Code du travail précise que le travailleur acquiert droit au congé payé à raison de 2,2 jours ouvrables par mois de service effectif [Code du travail, Art. 25.1]. La Convention collective interprofessionnelle prévoit également une durée de congé payé à raison de 2,2 jours ouvrables par mois de service effectif [Convention collective interprofessionnelle, Art. 69].\n\n⚠️ Information documentaire — ne constitue pas un conseil juridique. Consultez un professionnel du droit pour votre situation.",
+    "duree": 1.4461205005645752
+  },
+  {
+    "id": "cov_04",
+    "question": "Le travail des enfants est-il interdit ?",
+    "reponse": "Le travail des enfants n'est pas complètement interdit, mais certaines formes de travail sont interdites aux enfants de moins de 18 ans, notamment les travaux dangereux [LOI N° 2010-272 DU 30 SEPTEMBRE 2010, Art. 6] et les travaux domestiques pour les enfants de moins de 16 ans, sauf dans le cadre d'une qualification professionnelle à partir de 14 ans [ARRETE N° 009 MEMEASS/CAB DU 19 JANVIER 2012, Art. 6].\n⚠️ Information documentaire — ne constitue pas un conseil juridique. Consultez un professionnel du droit pour votre situation.",
+    "duree": 1.344111680984497
+  },
+  {
+    "id": "cov_05",
+    "question": "Comment se calcule l'indemnité de licenciement ?",
+    "reponse": "L'indemnité de licenciement est calculée pour chaque année de présence accomplie dans l'entreprise, à partir d'un pourcentage déterminé du salaire global mensuel moyen des douze mois d'activité qui ont précédé la date de licenciement [Convention collective interprofessionnelle, Art. 39]. Le pourcentage est fixé en fonction de l'ancienneté du travailleur à : 30 % jusqu'à la cinquième année comprise, 35 % pour la période allant de la sixième à la dixième année comprise, et 40 % pour la période s'étendant au-delà de la dixième année [DECRET N° 96-201 DU 7 MARS 1996 RELATIF A L'INDEMNITE DE LICENCIEMENT, Art. 3]. Les fractions d'année sont prises en considération pour le calcul de l'indemnité de licenciement [DECRET N° 96-201 DU 7 MARS 1996 RELATIF A L'INDEMNITE DE LICENCIEMENT, Art. 3].\n\n⚠️ Information documentaire — ne constitue pas un conseil juridique. Consultez un professionnel du droit pour votre situation.",
+    "duree": 1.6243696212768555
+  },
+  {
+    "id": "dif_01",
+    "question": "Que dit l'article 14.5 du Code du travail ?",
+    "reponse": "L'article 14.5 du Code du travail stipule que le contrat de travail, qu'il soit à durée déterminée ou à durée indéterminée, peut comporter une période d'essai dont la durée totale maximale est fixée par décret [Code du travail, Art. 14.5]. Lorsque les parties au contrat de travail décident de soumettre leurs relations à une période d'essai ou de la renouveler, le contrat doit être passé par écrit ou constaté par une lettre d'embauche mentionnant la durée de la période d'essai [Code du travail, Art. 14.5]. Cependant, les conventions collectives peuvent prévoir que les contrats de travail de tout ou partie des salariés qu'elles visent, comporteront obligatoirement une période d'essai et ne pas en subordonner la validité à la conclusion d'un contrat écrit [Code du travail, Art. 14.5].\n\n⚠️ Information documentaire — ne constitue pas un conseil juridique. Consultez un professionnel du droit pour votre situation.",
+    "duree": 3.56514310836792
+  },
+  {
+    "id": "dif_02",
+    "question": "Mon patron peut-il me virer sans préavis ?",
+    "reponse": "Selon le Code du travail, Art. 18.7, une rupture de contrat à durée indéterminée sans préavis ou sans que le délai de préavis ait été intégralement observé, emporte obligation pour la partie responsable de verser une indemnité [Code du travail, Art. 18.7]. Cependant, la rupture de contrat peut intervenir sans préavis en cas de faute lourde, sous réserve de l'appréciation de la juridiction compétente [Code du travail, Art. 18.7]. \n\nIl est important de noter que pendant la période d'essai, le contrat de travail peut être rompu librement sans préavis et sans indemnités, selon le Code du travail, Art. 18.1 [Code du travail, Art. 18.1].\n\n⚠️ Information documentaire — ne constitue pas un conseil juridique. Consultez un professionnel du droit pour votre situation.",
+    "duree": 10.248207092285156
+  },
+  {
+    "id": "dif_03",
+    "question": "Est-ce que le télétravail est encadré en Côte d'Ivoire ?",
+    "reponse": "Oui, le télétravail est encadré en Côte d'Ivoire [DECRET N° 2022-31 DU 12 JANVIER 2022, Art. 8]. Le télétravail est soumis aux règles de contrôle des lieux de travail édictées par le Code du Travail. L'autorité administrative compétente a accès au lieu du télétravail, mais cet accès est subordonné à l'information préalable de l'intéressé [DECRET N° 2022-31 DU 12 JANVIER 2022, Art. 8].\n\n⚠️ Information documentaire — ne constitue pas un conseil juridique. Consultez un professionnel du droit pour votre situation.",
+    "duree": 14.126405239105225
+  },
+  {
+    "id": "dif_04",
+    "question": "Que prévoit l'article 2 de la convention collective ?",
+    "reponse": "L'article 2 de la convention collective interprofessionnelle prévoit la prise d'effet de la convention, qui entrera en vigueur à partir du jour qui suivra celui de son dépôt au secrétariat du tribunal du Travail d'Abidjan par la partie la plus diligente [1]. Il définit également les travailleurs occasionnels, qui sont les travailleurs journaliers, embauchés à l'heure ou à la journée et payés à la fin de la journée de la semaine ou de la quinzaine [3]. De plus, il précise que les clauses de la convention s'appliquent aux employeurs et aux travailleurs des secteurs d'activité précités non signataires de la Convention collective interprofessionnelle pour compter de la publication au présent arrêté [2].\n\n⚠️ Information documentaire — ne constitue pas un conseil juridique. Consultez un professionnel du droit pour votre situation.",
+    "duree": 7.169530868530273
+  },
+  {
+    "id": "dif_05",
+    "question": "Un salarié peut-il faire grève sans prévenir ?",
+    "reponse": "Non, un salarié ne peut pas faire grève sans prévenir. Toute grève doit être précédée d'un préavis permettant la négociation entre les parties [Code du travail, Art. 82.5]. Le préavis de grève est déposé par les représentants des salariés, auprès de la direction de l'entreprise, de l'établissement et le cas échéant auprès des unions patronales de la branche d'activité, avec une durée de six jours ouvrables [Code du travail, Art. 82.5]. Est interdite toute grève déclenchée dans l'inobservation du préavis prévu [Code du travail, Art. 82.5].\n\n⚠️ Information documentaire — ne constitue pas un conseil juridique. Consultez un professionnel du droit pour votre situation.",
+    "duree": 10.02878713607788
+  }
+]

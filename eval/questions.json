@@ -1,0 +1,207 @@
+[
+  {
+    "id": "cov_01",
+    "categorie": "couvert",
+    "question": "Quelle est la durée maximale de la période d'essai ?",
+    "article_attendu": {
+      "reference": "DECRET N° 96-195",
+      "article": "2"
+    },
+    "articles_pertinents": [
+      {
+        "reference": "Code du travail",
+        "article": "14.5"
+      },
+      {
+        "reference": "Convention",
+        "article": "14"
+      }
+    ],
+    "commentaire": "Réponse distribuée loi + décret + convention — teste la hiérarchie."
+  },
+  {
+    "id": "cov_02",
+    "categorie": "couvert",
+    "question": "Une femme enceinte peut-elle être licenciée ?",
+    "article_attendu": {
+      "reference": "Code du travail",
+      "article": "23.4"
+    },
+    "articles_pertinents": [
+      {
+        "reference": "Code du travail",
+        "article": "23.6"
+      },
+      {
+        "reference": "Code du travail",
+        "article": "23.8"
+      }
+    ],
+    "commentaire": "Reformulation (licencier ≠ résilier) — test sémantique classique."
+  },
+  {
+    "id": "cov_03",
+    "categorie": "couvert",
+    "question": "Combien de jours de congés payés par mois de travail ?",
+    "article_attendu": {
+      "reference": "Code du travail",
+      "article": "25.1"
+    },
+    "articles_pertinents": [
+      {
+        "reference": "Convention",
+        "article": "69"
+      }
+    ],
+    "commentaire": "Question factuelle avec chiffre précis attendu (2,2 jours)."
+  },
+  {
+    "id": "cov_04",
+    "categorie": "couvert",
+    "question": "Le travail des enfants est-il interdit ?",
+    "article_attendu": {
+      "reference": "LOI N° 2010-272",
+      "article": "7"
+    },
+    "articles_pertinents": [
+      {
+        "reference": "LOI N° 2010-272",
+        "article": "5"
+      },
+      {
+        "reference": "ARRETE N° 009",
+        "article": "5"
+      }
+    ],
+    "commentaire": "Test des LOIS ANNEXÉES — vérifie que la loi 2010-272 est bien citée sous son nom (pas Code du travail)."
+  },
+  {
+    "id": "cov_05",
+    "categorie": "couvert",
+    "question": "Comment se calcule l'indemnité de licenciement ?",
+    "article_attendu": {
+      "reference": "DECRET N° 2017-210",
+      "article": "3"
+    },
+    "articles_pertinents": [
+      {
+        "reference": "DECRET N° 96-201",
+        "article": "3"
+      },
+      {
+        "reference": "Convention collective interprofessionnelle",
+        "article": "39"
+      },
+      {
+        "reference": "Code du travail",
+        "article": "18.11"
+      }
+    ],
+    "commentaire": "Réponse distribuée : le calcul est dans l'art. 3 du décret 2017-210 (le nouveau). L'art. 3 du décret 96-201 (l'ancien, abrogé) et l'art. 39 de la convention traitent aussi du barème."
+  },
+  {
+    "id": "dif_01",
+    "categorie": "difficile",
+    "question": "Que dit l'article 14.5 du Code du travail ?",
+    "article_attendu": {
+      "reference": "Code du travail",
+      "article": "14.5"
+    },
+    "articles_pertinents": [],
+    "commentaire": "RÉFÉRENCE EXACTE — teste le routeur avec filtre section."
+  },
+  {
+    "id": "dif_02",
+    "categorie": "difficile",
+    "question": "Mon patron peut-il me virer sans préavis ?",
+    "article_attendu": {
+      "reference": "Code du travail",
+      "article": "18.7"
+    },
+    "articles_pertinents": [
+      {
+        "reference": "Code du travail",
+        "article": "16.11"
+      }
+    ],
+    "commentaire": "REGISTRE ARGOTIQUE (virer) — teste la robustesse au registre."
+  },
+  {
+    "id": "dif_03",
+    "categorie": "difficile",
+    "question": "Est-ce que le télétravail est encadré en Côte d'Ivoire ?",
+    "article_attendu": {
+      "reference": "DECRET N° 2022-31",
+      "article": "2"
+    },
+    "articles_pertinents": [
+      {
+        "reference": "DECRET N° 2022-31",
+        "article": "3"
+      }
+    ],
+    "commentaire": "Test de la référence RÉCENTE (2022) mal étiquetée au départ."
+  },
+  {
+    "id": "dif_04",
+    "categorie": "difficile",
+    "question": "Que prévoit l'article 2 de la convention collective ?",
+    "article_attendu": {
+      "reference": "Convention collective interprofessionnelle",
+      "article": "2"
+    },
+    "articles_pertinents": [],
+    "commentaire": "RÉFÉRENCE AMBIGUË (44 art.2 dans le corpus) — teste filtre section + désambiguïsation."
+  },
+  {
+    "id": "dif_05",
+    "categorie": "difficile",
+    "question": "Un salarié peut-il faire grève sans prévenir ?",
+    "article_attendu": {
+      "reference": "Code du travail",
+      "article": "82.5"
+    },
+    "articles_pertinents": [
+      {
+        "reference": "Code du travail",
+        "article": "82.6"
+      }
+    ],
+    "commentaire": "Reformulation (préavis de grève) — sujet sensible, retrieval doit être précis."
+  },
+  {
+    "id": "hc_01",
+    "categorie": "hors_corpus",
+    "question": "Quel est le taux de TVA en Côte d'Ivoire ?",
+    "attend_abstention": true,
+    "commentaire": "Fiscalité — hors du droit du travail. Test d'abstention canonique."
+  },
+  {
+    "id": "hc_02",
+    "categorie": "hors_corpus",
+    "question": "Quelle est la peine pour vol simple en Côte d'Ivoire ?",
+    "attend_abstention": true,
+    "commentaire": "Droit pénal — proche thématiquement (peines mentionnées dans le code) mais hors sujet."
+  },
+  {
+    "id": "hc_03",
+    "categorie": "hors_corpus",
+    "question": "Qui est le président actuel de la Côte d'Ivoire ?",
+    "attend_abstention": true,
+    "commentaire": "Actualité politique — hors nature du corpus."
+  },
+  {
+    "id": "hc_04",
+    "categorie": "hors_corpus",
+    "question": "Quel est le prix du timbre fiscal pour un passeport ?",
+    "attend_abstention": true,
+    "commentaire": "Administratif — piégeux car 'fiscal' peut attirer des passages sur les indemnités."
+  },
+  {
+    "id": "hc_05",
+    "categorie": "hors_corpus",
+    "question": "Comment créer une SARL en Côte d'Ivoire ?",
+    "attend_abstention": true,
+    "commentaire": "Droit des sociétés (OHADA) — proche du travail mais nettement distinct."
+  }
+]
