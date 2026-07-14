@@ -58,22 +58,29 @@ def get_groq_key():
 # ============================================================ CHARGEMENT (une seule fois)
 @st.cache_resource(show_spinner="Chargement des modèles et de l'index…")
 def initialiser():
-    # Extraction de l'index depuis le ZIP versionné, si le dossier n'existe pas
-    # Pourquoi : sur Streamlit Cloud, le dossier corpus/index_chroma/ n'est pas
-    # versionné (trop gros pour git). On versionne à la place un ZIP compressé,
-    # qu'on extrait au premier démarrage. Extraction ~10 s, puis lecture directe
-    # de l'index → démarrage total ~30 s au lieu de ~40 min d'encoding.
+    """..."""
+    # === 1. Extraction du ZIP en PREMIER (avant tout appel réseau)
     import zipfile
     zip_path = RACINE / "corpus" / "index_chroma.zip"
     if not INDEX_DIR.exists() and zip_path.exists():
-        st.info("Extraction de l'index vectoriel ")
+        st.info("Extraction de l'index vectoriel...")
         with zipfile.ZipFile(zip_path, "r") as zf:
             zf.extractall(RACINE / "corpus")
 
-    # 1. Modèle d'embeddings (toujours à charger — 500 Mo en RAM)
+    # === 2. Authentification HuggingFace (débloque le téléchargement du modèle)
+    hf_token = None
+    try:
+        hf_token = st.secrets.get("HF_TOKEN")
+    except (KeyError, FileNotFoundError):
+        hf_token = os.environ.get("HF_TOKEN")
+    if hf_token:
+        os.environ["HF_TOKEN"] = hf_token
+        os.environ["HUGGING_FACE_HUB_TOKEN"] = hf_token  # nom alternatif que certaines versions utilisent
+
+    # === 3. Chargement du modèle (peut télécharger si absent en cache)
     modele = SentenceTransformer(MODELE_EMB)
 
-    # 2. Chunks (nécessaires pour BM25, et pour reconstruire l'index si absent)
+    # === 4. Suite normale de l'initialisation
     chunks = json.loads(CHUNKS.read_text(encoding="utf-8"))
     passages = [
         f"{c['reference']}, Art. {c['article']} — {c['contenu']}"
