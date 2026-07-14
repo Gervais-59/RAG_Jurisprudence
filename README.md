@@ -102,5 +102,3 @@ Un projet portfolio honnête nomme ses limites — et donne le remède pour chac
 **Avertissement d'usage** : cet outil fournit de l'information documentaire et non un conseil juridique. Les textes indexés sont ceux publiés jusqu'à 2022 — vérifier les évolutions récentes avant toute décision. Consulter un professionnel du droit pour toute situation réelle.
 
 ---
-
-## 📁 Structure du dépôt
