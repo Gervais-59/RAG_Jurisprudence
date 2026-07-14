@@ -58,15 +58,18 @@ def get_groq_key():
 # ============================================================ CHARGEMENT (une seule fois)
 @st.cache_resource(show_spinner="Chargement des modèles et de l'index…")
 def initialiser():
-    """Charge modèle d'embeddings, ChromaDB, BM25 — mis en cache par Streamlit.
+    # Extraction de l'index depuis le ZIP versionné, si le dossier n'existe pas
+    # Pourquoi : sur Streamlit Cloud, le dossier corpus/index_chroma/ n'est pas
+    # versionné (trop gros pour git). On versionne à la place un ZIP compressé,
+    # qu'on extrait au premier démarrage. Extraction ~10 s, puis lecture directe
+    # de l'index → démarrage total ~30 s au lieu de ~40 min d'encoding.
+    import zipfile
+    zip_path = RACINE / "corpus" / "index_chroma.zip"
+    if not INDEX_DIR.exists() and zip_path.exists():
+        st.info("Extraction de l'index vectoriel ")
+        with zipfile.ZipFile(zip_path, "r") as zf:
+            zf.extractall(RACINE / "corpus")
 
-    Pourquoi @st.cache_resource : sans cache, Streamlit rechargerait le modèle
-    (~500 Mo) et reconstruirait BM25 à chaque interaction. Avec le décorateur,
-    tout est chargé UNE SEULE FOIS au démarrage.
-
-    Reconstruction automatique de l'index ChromaDB s'il est absent (cas du
-    déploiement) : premier démarrage ~2-3 min, suivants instantanés.
-    """
     # 1. Modèle d'embeddings (toujours à charger — 500 Mo en RAM)
     modele = SentenceTransformer(MODELE_EMB)
 
@@ -197,7 +200,9 @@ RÈGLES IMPÉRATIVES :
 4. Si plusieurs textes se complètent (loi + décret + convention), présente-les dans cet ordre hiérarchique.
 5. Termine TOUJOURS par : "⚠️ Information documentaire — ne constitue pas un conseil juridique. Consultez un professionnel du droit pour votre situation."
 
-Réponds de façon concise (5 à 15 lignes, sauf question à réponse hiérarchisée)."""
+Réponds de façon concise (5 à 15 lignes, sauf question à réponse hiérarchisée).
+6. Si une question est posée dans une langue compatible au modèle de langue dans projet, tu réponds exactement dans cette langue.
+"""
 
 
 def generer_reponse(question, passages):

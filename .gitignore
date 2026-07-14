@@ -4,6 +4,7 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 corpus/index_chroma/
+!corpus/index_chroma.zip
 corpus/*.pdf
 acte_uniforme/
 # Notes personnelles
